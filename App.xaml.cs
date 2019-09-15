@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Tools.Utils;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -22,6 +24,24 @@ namespace Tools
     /// </summary>
     sealed partial class App : Application
     {
+        public static TEnum GetEnum<TEnum>(string value)
+        {
+            if (!typeof(TEnum).GetTypeInfo().IsEnum)
+            {
+                throw new InvalidOperationException();
+            }
+
+            return (TEnum)Enum.Parse(typeof(TEnum), value);
+        }
+
+        public static void SetTheme()
+        {
+            if (Window.Current.Content is FrameworkElement theme)
+            {
+                theme.RequestedTheme = SettingsUtils.Theme;
+            }
+        }
+
         /// <summary>
         /// 初始化单一实例应用程序对象。这是执行的创作代码的第一行，
         /// 已执行，逻辑上等同于 main() 或 WinMain()。

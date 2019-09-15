@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="780d6e41-d290-46f0-9b2c-16e90db10545"
-    Publisher="CN=HaleW"
+    Name="2169HaleWang.Tools"
+    Publisher="CN=0D4B9868-9F65-4FEB-980D-79CCAE83C901"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="780d6e41-d290-46f0-9b2c-16e90db10545" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="75da85cf-008f-4f8a-b9ed-543fbb811b55" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Tools</DisplayName>
-    <PublisherDisplayName>HaleW</PublisherDisplayName>
+    <DisplayName>&gt;_Tools</DisplayName>
+    <PublisherDisplayName>HaleWang</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,13 +32,20 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="Tools.App">
       <uap:VisualElements
-        DisplayName="Tools"
+        DisplayName="&gt;_Tools"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="Tools"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png" ShortName="Tools">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\SplashScreen.png"   BackgroundColor="transparent"/>
+        <uap:LockScreen BadgeLogo="Assets\BadgeLogo.png" Notification="badgeAndTileText"/>
       </uap:VisualElements>
     </Application>
   </Applications>
