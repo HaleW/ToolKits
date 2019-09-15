@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Tools.Utils;
 using Windows.ApplicationModel.DataTransfer;
@@ -34,29 +35,43 @@ namespace Tools
             if (Folder == null)
             {
                 TeachingTipShow("错误提示", "请先选择文件夹！");
+                return;
             }
-            else
-            {
-                OutputDataTextBox.Text = string.Empty;
-                OutputFolderTreeTextBox.Text = string.Empty;
-                OutputFileListTextBox.Text = string.Empty;
-                OutputErrorFileTextBox.Text = string.Empty;
-                LoadingDataProgressBar.Visibility = Visibility.Visible;
 
+            OutputDataTextBox.Text = string.Empty;
+            OutputFolderTreeTextBox.Text = string.Empty;
+            OutputFileListTextBox.Text = string.Empty;
+            OutputErrorFileTextBox.Text = string.Empty;
+            LoadingDataProgressBar.Visibility = Visibility.Visible;
+
+            string title = "读取完成";
+            string subtitle = "所有文件已读取完成！";
+            try
+            {
                 DataResult result = await new ReadDataUtils().StartCollectAsync(Folder, Conditions);
                 OutputDataTextBox.Text = result.FileContent;
                 OutputFolderTreeTextBox.Text = result.FolderStructure;
                 OutputFileListTextBox.Text = result.FileList;
                 OutputErrorFileTextBox.Text = result.ErrorFileName;
 
-                string title = "读取完成";
-                string subtitle = "所有文件已读取完成！";
                 if (!string.IsNullOrEmpty(result.ErrorFileName))
                 {
                     subtitle = "部分文件不能读取！";
                 }
-                TeachingTipShow(title, subtitle);
 
+            }
+            catch (Exception exception)
+            {
+                if (exception is ArgumentNullException)
+                {
+                    title = "错误提示";
+                    subtitle = "文件夹为空！";
+                }
+
+            }
+            finally
+            {
+                TeachingTipShow(title, subtitle);
                 LoadingDataProgressBar.Visibility = Visibility.Collapsed;
             }
         }
