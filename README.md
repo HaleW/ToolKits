@@ -1,12 +1,49 @@
 # >_Tools
 
-![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/Screenshots/2019-09-15_01-13-59.png)
+<div align="center">
+  <img width="150" align="center" src="https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo.png">
+</div>
 
-![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/Screenshots/2019-09-15_01-15-40.png)
+<h1 align="center">>_Tools</h1>
 
-![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/Screenshots/2019-09-15_01-47-18.png)
+## 介绍
 
-![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/Screenshots/2019-09-15_01-47-35.png)
+**>_Tools** 为一款工具集软件，目前包含以下工具：
+
+### 提取文件夹文件内容
+
+选择文件夹之后，输入需要选择的文件的条件，然后读取根据条件选择的文件内容。
+
+#### 输入内容
+
+1. 包含条件
+    - 文件夹名前缀
+    - 文件加夹后缀
+    - 部分文件夹名
+    - 文件夹全名
+    - 文件名前缀
+    - 文件名后缀
+    - 部分文件名
+    - 文件全名
+
+2. 排除条件
+    - 文件夹名前缀
+    - 文件加夹后缀
+    - 部分文件夹名
+    - 文件夹全名
+    - 文件名前缀
+    - 文件名后缀
+    - 部分文件名
+    - 文件全名
+
+#### 输出内容
+
+- 文件夹目录结构
+- 已读取的文件名列表
+- 不能读取的文件名列表
+- 读取到的文件内容
+
+![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/screenshots/screenshots.png)
 
 ## 更新日志
 
@@ -20,8 +57,6 @@
 2. 占用内存大
 3. 打开大文件夹出现内存泄漏问题
 4. 文件内容提取完成时会存在卡顿
-
----
 
 ## 贡献
 
