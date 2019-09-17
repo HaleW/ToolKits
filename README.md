@@ -1,6 +1,6 @@
 # >_Tools
 
-![Logo](https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo.png)
+![Logo](https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo-150.png)
 
 ## 介绍
 
