@@ -39,6 +39,8 @@
 - 不能读取的文件名列表
 - 读取到的文件内容
 
+#### 截图
+
 ![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/screenshots/screenshots.png)
 
 ## 更新日志
