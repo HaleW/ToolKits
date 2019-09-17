@@ -1,10 +1,6 @@
 # >_Tools
 
-<div align="center">
-  <img width="150" align="center" src="https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo.png">
-</div>
-
-<h1 align="center">>_Tools</h1>
+![Logo](https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo.png)
 
 ## 介绍
 
