@@ -1,6 +1,28 @@
-# >_Tools
+<p align="center">
+  <img align="center" src="https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo-300x250.png">
+</p>
 
-![Logo](https://raw.githubusercontent.com/HaleW/Tools/master/logo/ToolsLogo-150.png)
+<h1 align="center">
+  ToolKits
+</h1>
+
+<p align="center">
+    <a href="https://github.com/HaleW/Tools/issues">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/HaleW/Tools">
+    </a>
+    <a href="https://github.com/HaleW/Tools/fork">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/HaleW/Tools">
+    </a>
+    <a href="https://github.com/HaleW/Tools/stargazers">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/HaleW/Tools">
+    </a>
+    <a href="https://github.com/HaleW/Tools/blob/master/LICENSE">
+        <img alt="GitHub license" src="https://img.shields.io/github/license/HaleW/Tools">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/platform-windows%2010%20%7C%20uwp-blue">
+    </a>
+</p>
 
 ## 介绍
 
@@ -43,6 +65,10 @@
 
 ![screenshot](https://raw.githubusercontent.com/HaleW/Tools/master/screenshots/screenshots.png)
 
+## 下载
+
+![Microsoft Store](https://www.microsoft.com/zh-cn/p/tools/9pb0vbfl7z5x)
+
 ## 更新日志
 
 ### 更新内容
@@ -58,7 +84,7 @@
 
 ## 贡献
 
-**>_Tools** 是完全免费开源的一款原生UWP软件，如果你喜欢它，你可以向此项目提交代码，或者给此项目 **start**。
+**>_Tools** 是完全免费开源的一款原生UWP软件，如果你喜欢它，你可以向此项目提交代码，或者给此项目 **star**。
 
 ## 隐私策略
 
@@ -66,9 +92,9 @@
 
 ## 特别感谢
 
-> [Windows Terminal](https://github.com/microsoft/terminal) - 感谢 Windows Terminal 给了本项目 Logo 的设计灵感。
+- [Windows Terminal](https://github.com/microsoft/terminal) - 感谢 Windows Terminal 给了本项目 Logo 的设计灵感。
 
-> [Gimp](https://www.gimp.org/) - 让本项目能够免费使用它制作 Logo。
+- [Gimp](https://www.gimp.org/) - 让本项目能够免费使用它制作 Logo。
 
 ## 开源协议
 
