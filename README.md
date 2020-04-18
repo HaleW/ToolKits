@@ -84,11 +84,11 @@
 
 ## 贡献
 
-**>_Tools** 是完全免费开源的一款原生UWP软件，如果你喜欢它，你可以向此项目提交代码，或者给此项目 **star**。
+**ToolKits** 是完全免费开源的一款原生UWP软件，如果你喜欢它，你可以向此项目提交代码，或者给此项目 **star**。
 
 ## 隐私策略
 
-**>_Tools** 永远不会收集用户个人信息。并且源代码已经开源到[GitHub](https://github.com/halew/Tools)。
+**ToolKits** 永远不会收集用户个人信息。并且源代码已经开源到[GitHub](https://github.com/halew/Tools)。
 
 ## 特别感谢
 
